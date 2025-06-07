@@ -2,6 +2,12 @@
 
 This is a simple web-based demo application built with **Streamlit** that utilizes a **BERT-based model** to recommend freelance gigs based on a user's profile.
 
+## 🔗 Web App
+
+This recommendation service powers the web application developed for **Hack With Gujarat 2025**.
+
+🚀 **Try it live:** [v0-hwg.vercel.app](https://v0-hwg.vercel.app)
+
 ## 🔍 Overview
 
 Freelancers can enter their **User ID**, and the app will analyze their skills and bio to recommend the most relevant freelance gigs. The recommendation is powered by **DistilBERT**, a lightweight version of BERT.
