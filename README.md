@@ -138,3 +138,5 @@ streamlit run app.py
 * Add user authentication
 * Allow user to update skills and bio in-app
 * Use caching to reduce re-computation of embeddings
+
+add something about encoders
