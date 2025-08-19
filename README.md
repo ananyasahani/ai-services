@@ -1,4 +1,4 @@
-# BERT Gig Recommendation Model - Streamlit App
+# BERT Gig Recommendation Model 
 
 This is a simple web-based demo application built with **Streamlit** that utilizes a **BERT-based model** to recommend freelance gigs based on a user's profile.
 
