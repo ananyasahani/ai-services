@@ -6,20 +6,20 @@ This is a simple web-based demo application built with **Streamlit** that utiliz
 
 This recommendation service powers the web application developed for **Hack With Gujarat 2025**.
 
-🚀 **Try it live:** [v0-hwg.vercel.app](https://v0-hwg.vercel.app)
+ **Try it live:** [v0-hwg.vercel.app](https://v0-hwg.vercel.app)
 
 ## 🔍 Overview
 
 Freelancers can enter their **User ID**, and the app will analyze their skills and bio to recommend the most relevant freelance gigs. The recommendation is powered by **DistilBERT**, a lightweight version of BERT.
 
-## 🙅 What the Freelancer Should Enter
+##  What the Freelancer Should Enter
 
 * **User ID**: A unique identifier representing the freelancer.
 
   * The app uses a mock user database, so ensure your user ID exists (e.g., `freelancer1`).
   * Each user profile includes a `skills` list and a short `bio`.
 
-## 🧰 How It Works
+##  How It Works
 
 1. The app uses the `transformers` library to load a pre-trained `distilbert-base-uncased` model.
 2. The user's profile (skills + bio) is converted into a BERT embedding.
@@ -27,7 +27,7 @@ Freelancers can enter their **User ID**, and the app will analyze their skills a
 4. Cosine similarity is calculated between the user's embedding and each gig embedding.
 5. The top 5 most similar gigs are displayed as recommendations.
 
-## 📊 Example User
+##  Example User
 
 ```json
 freelancer1: {
@@ -37,7 +37,7 @@ freelancer1: {
 }
 ```
 
-## 📈 All Available Gigs
+## All Available Gigs
 
 ```json
 [
@@ -80,7 +80,7 @@ freelancer1: {
 ]
 ```
 
-## 🏆 Recommended Gigs (Model Results)
+## Recommended Gigs (Model Results)
 
 ```
 Gig 1: Mobile App Development
@@ -104,7 +104,7 @@ Skills: Shopify, JavaScript, HTML
 Similarity Score: 0.9136
 ```
 
-## ⚙️ Dependencies
+## Dependencies
 
 Before running the app, install the following Python packages:
 
@@ -112,7 +112,7 @@ Before running the app, install the following Python packages:
 pip install streamlit transformers torch numpy
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Save the Python script as `app.py`
 2. Open a terminal and navigate to the directory containing `app.py`
@@ -126,13 +126,13 @@ streamlit run app.py
 
 ---
 
-## 📄 Notes
+## Notes
 
 * This is a **demo** and uses hardcoded mock data for both gigs and users.
 * In a production version, user data and gigs would be retrieved from a real database.
 * BERT embeddings are computed dynamically; depending on hardware, performance may vary.
 
-## ✈️ Future Improvements
+## Future Improvements
 
 * Connect to a real backend database
 * Add user authentication
